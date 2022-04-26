@@ -4,7 +4,7 @@
 
 Билиотеки - React.js, Typescript, Redux, Redux-thunk;
 
-Стилизация - Sass, flexbox;
+Стилизация - Sass, BEM, flexbox;
 
 Код - Eslint. Prettier;
 
