@@ -1,0 +1,12 @@
+@import "styles/sass/main";
+
+.Main {
+  width: 100%;
+  height: 100%;
+  @include flex(center);
+
+  &__content {
+    width: 100%;
+    height: 100%;
+  }
+}
