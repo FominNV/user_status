@@ -2,7 +2,7 @@
   "name": "user_status",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://FominNV.github.io/user_status",
+  "homepage": "http://FominNV.github.io/user_status",
   "dependencies": {
     "@redux-devtools/extension": "^3.2.2",
     "@testing-library/jest-dom": "^5.16.2",
