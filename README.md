@@ -9,4 +9,4 @@
 Код - Eslint. Prettier;
 
 
-Deploy [#User_status](https://fominnv.github.io/carsharing/)
+Deploy [#User_status](https://fominnv.github.io/user_status/)
