@@ -4,6 +4,8 @@
 
 Билиотеки - React.js, Typescript, Redux, Redux-thunk, axios;
 
+Работа с датами - date-fns;
+
 Стилизация - Sass, BEM, flexbox;
 
 Код - Eslint. Prettier;
