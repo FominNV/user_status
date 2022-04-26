@@ -1,0 +1,101 @@
+@import "styles/sass/main";
+
+.FormHeader {
+  width: 100%;
+  max-width: 727px;
+  margin-top: 90px;
+  padding-left: 10px;
+  @include flex;
+
+  @media (max-width: $md), (max-device-width: $md) {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 32px;
+    @include flex(_, flex-start, column);
+  }
+
+
+  &__greeting {
+    width: 223px;
+    font: 700 30px/34px $arial-bold;
+    color: $gray-dark;
+
+    @media (max-width: $md), (max-device-width: $md) {
+      width: 100%;
+    }
+  }
+
+  &__userblock {
+    width: calc(100% - 223px);
+
+    &_item {
+      width: 100%;
+      @include flex(space-between, flex-end);
+
+      @media (max-width: $sm), (max-device-width: $sm) {
+        @include flex(space-between, flex-start, column);
+      }
+    }
+
+    @media (max-width: $md), (max-device-width: $md) {
+      width: 100%;
+    }
+  }
+
+  &__username {
+    font: 700 30px/34px $arial-bold;
+    color: $black;
+  }
+
+  &__change-status {
+    @include btn-reset;
+    font: 400 12px/22px $arial-regular;
+    color: $blue-text;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+
+  &__status {
+    position: relative;
+    width: 100%;
+    min-height: 46px;
+    margin-top: 12px;
+    padding: 12px;
+    background: $gray-light;
+    font: 400 12px/22px $arial-regular;
+    color: $black-gray;
+    overflow-wrap: break-word;
+  }
+
+  &__square {
+    position: absolute;
+    top: -5px;
+    left: 11px;
+    width: 11px;
+    height: 11px;
+    background: $gray-light;
+    transform: rotate(45deg);
+  }
+
+  &__textarea {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 50px;
+    padding: 12px;
+    background: $white;
+    font: 400 16px/22px $arial-regular;
+    color: $black;
+    border: 2px solid $blue-icon;
+    box-sizing: border-box;
+    resize: none;
+    z-index: 5;
+    transform: scale(0);
+    transition: all 0.3s;
+
+    &_active {
+      transform: scale(1);
+    }
+  }
+}
