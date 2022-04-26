@@ -1,0 +1,21 @@
+@import "styles/sass/main";
+
+.Form {
+  width: 100%;
+  padding-bottom: 40px;
+  animation: show-form 1s 1 ease-in;
+
+  &__block {
+    padding-left: 10px;
+    padding-bottom: 40px;
+
+    @media (max-width: $md), (max-device-width: $md) {
+      padding-bottom: 20px;
+    }
+
+    &_middle {
+      border-top: 1px solid $gray-light;
+      border-bottom: 1px solid $gray-light;
+    }
+  }
+}
