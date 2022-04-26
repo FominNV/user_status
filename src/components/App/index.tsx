@@ -7,7 +7,7 @@ import "./styles.scss";
 const App: FC = () => (
   <Routes>
     <Route
-      path="*"
+      path="/user_status"
       element={<Main />}
     />
   </Routes>
