@@ -2,7 +2,7 @@
 
 В данном проекте используется следующий стек:
 
-Билиотеки - React.js, Typescript, Redux, Redux-thunk;
+Билиотеки - React.js, Typescript, Redux, Redux-thunk, axios;
 
 Стилизация - Sass, BEM, flexbox;
 
