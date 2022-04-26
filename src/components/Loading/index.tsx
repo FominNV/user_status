@@ -7,7 +7,7 @@ const Loading: FC = () => (
   <div className="Loading">
     <ReactLoading
       type="spinningBubbles"
-      color="green"
+      color="blue"
       height={36}
       width={36}
     />
