@@ -1,0 +1,58 @@
+@import "styles/sass/main";
+
+.Checkbox {
+  width: 100%;
+  height: 30px;
+  margin-top: 40px;
+  @include flex;
+
+  @media (max-width: $md), (max-device-width: $md) {
+    margin-top: 20px;
+  }
+  @media (max-width: $sm), (max-device-width: $sm) {
+    @include flex(_, _, column);
+  }
+
+  &__label {
+    @include label;
+
+    @media (max-width: $md), (max-device-width: $md) {
+      width: fit-content;
+      margin-right: 12px;
+    }
+  }
+
+  &__btn-wrap {
+    @include btn-reset;
+    height: 100%;
+    @include flex(_, center);
+    cursor: pointer;
+
+    @media (max-width: $sm), (max-device-width: $sm) {
+      margin-top: 16px;
+    }
+  }
+
+  &__custom {
+    position: relative;
+    width: 12px;
+    min-width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    @include flex(center, center);
+    border: 1px solid $gray-high-dark;
+  }
+
+  &__check {
+    opacity: 0;
+
+    &_active {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    font: 400 16px/19px $arial-regular;
+    color: $black;
+  }
+}
