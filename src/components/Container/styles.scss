@@ -1,0 +1,15 @@
+@import "styles/sass/main";
+
+.Container {
+  width: 100%;
+  max-width: 990px;
+  height: 100%;
+
+  @media (max-width: $md), (max-device-width: $md) {
+    padding: 0 32px;
+  }
+
+  @media (max-width: $sm), (max-device-width: $sm) {
+    padding: 0 8px;
+  }
+}
